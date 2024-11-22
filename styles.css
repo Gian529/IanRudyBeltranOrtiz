@@ -1,50 +1,72 @@
+/* Resetear márgenes y agregar una base para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
+    padding-top: 20px;
 }
 
+/* Encabezado */
 header {
     text-align: center;
     background-color: #004080;
-    color: #fff;
-    padding: 1rem 0;
+    color: white;
+    padding: 20px;
 }
 
 header h1 {
-    margin: 0;
     font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 header p {
-    margin: 0;
     font-size: 1.2rem;
 }
 
+/* Sección principal */
 main {
-    padding: 1rem;
+    width: 80%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
 }
 
-section {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    border-bottom: 2px solid #004080;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
+/* Sección de imagen */
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .logo-ucsp {
     max-width: 150px;
+    width: 100%;
+    height: auto;
     display: block;
-    margin: 0 auto 1rem;
+    margin: 0 auto;
+}
+
+.background-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de cursos y amigos */
+h2 {
+    margin-bottom: 10px;
+    color: #004080;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 5px;
 }
 
 ul {
@@ -53,30 +75,28 @@ ul {
 }
 
 ul li {
-    background: #004080;
-    color: #fff;
-    margin: 0.5rem 0;
-    padding: 0.5rem;
+    background-color: #004080;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
     border-radius: 5px;
+    font-size: 1rem;
 }
 
 ul li a {
-    color: #fff;
     text-decoration: none;
+    color: white;
 }
 
-.background-image {
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ul li a:hover {
+    text-decoration: underline;
 }
 
+/* Pie de página */
 footer {
     text-align: center;
-    padding: 1rem;
-    background: #004080;
-    color: #fff;
-    position: relative;
+    padding: 10px;
+    background-color: #004080;
+    color: white;
+    margin-top: 30px;
 }
