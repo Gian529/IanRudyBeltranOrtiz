@@ -1,123 +1,105 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ian Rudy Beltran Ortiz - Perfil Académico</title>
-    <meta name="description" content="Perfil de Ian Rudy Beltran Ortiz, estudiante de Ciencias de la Computación">
-    <style>
-        /* Estilo del fondo */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(120deg, #4caf50, #81c784);
-            color: #fff;
-        }
+/* Estilo General */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
 
-        /* Contenedor principal */
-        .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
-            background: #fff;
-            color: #333;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
+/* Barra de Navegación */
+.navbar {
+    background-color: #161b22;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-        /* Encabezados */
-        h1 {
-            text-align: center;
-            color: #4caf50;
-            margin-bottom: 20px;
-            font-size: 2.5rem;
-        }
+.navbar .logo {
+    color: #58a6ff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
-        h2, h3 {
-            color: #333;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #4caf50;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
 
-        /* Listas */
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
+.nav-links li {
+    margin: 0 15px;
+}
 
-        li {
-            margin: 10px 0;
-            padding: 10px;
-            background: #f4f4f9;
-            border-radius: 8px;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
+.nav-links a {
+    text-decoration: none;
+    color: #c9d1d9;
+    font-weight: bold;
+    transition: color 0.3s;
+}
 
-        li:hover {
-            transform: scale(1.02);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-        }
+.nav-links a:hover {
+    color: #58a6ff;
+}
 
-        /* Enlaces */
-        a {
-            color: #4caf50;
-            text-decoration: none;
-            font-weight: bold;
-        }
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('https://source.unsplash.com/featured/?university') no-repeat center center/cover;
+    color: #fff;
+}
 
-        a:hover {
-            color: #388e3c;
-            text-decoration: underline;
-        }
+.hero .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
 
-        /* Correo */
-        p a {
-            color: #388e3c;
-            font-weight: bold;
-        }
+/* Secciones */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
 
-        p a:hover {
-            color: #1b5e20;
-        }
+.section h2 {
+    color: #58a6ff;
+    margin-bottom: 20px;
+}
 
-        /* Agradecimiento */
-        p {
-            text-align: center;
-            font-style: italic;
-            margin-top: 20px;
-            color: #555;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Ian Rudy Beltran Ortiz</h1>
-        <h2>Carrera: Ciencias de la Computación</h2>
-        
-        <h3>Cursos Realizados</h3>
-        <ul>
-            <li>Introducción a la Programación</li>
-            <li>Estructuras Discretas</li>
-            <li>Programación de Videojuegos</li>
-            <li>Introducción a la Vida Universitaria</li>
-            <li>Metodología del Estudio</li>
-        </ul>
+ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-        <h3>Correo Electrónico</h3>
-        <p><a href="mailto:ian.beltran@ucsp.edu.pe">ian.beltran@ucsp.edu.pe</a></p>
-        
-        <h3>Amigos</h3>
-        <ul>
-            <li><a href="https://amy-create-program.github.io/HTML/" target="_blank">Amy Create Program</a></li>
-            <li><a href="https://mathortas.github.io/Mathias-Ayllon-Website/#homeb" target="_blank">Mathias Ayllon</a></li>
-            <li><a href="https://guspinkman.github.io/Gustavo-Adolfo-Alpaca-Ticona/" target="_blank">Gustavo Adolfo Alpaca Ticona</a></li>
-            <li><a href="https://jaimefriedrich.github.io/Friedrich-Jaime-Rodriguez-Canales/#education" target="_blank">Jaime Friedrich Rodríguez Canales</a></li>
-        </ul>
+ul li {
+    margin: 10px 0;
+    background-color: #21262d;
+    padding: 10px;
+    border-radius: 8px;
+    color: #c9d1d9;
+}
 
-        <p>¡Gracias por visitar mi página!</p>
-    </div>
-</body>
-</html>
+/* Enlaces */
+a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1f6feb;
+    text-decoration: underline;
+}
+
+/* Pie de Página */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #161b22;
+    color: #c9d1d9;
+    font-size: 0.9rem;
+}
