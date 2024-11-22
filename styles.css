@@ -53,12 +53,15 @@ main {
 }
 
 .background-image {
-    max-width: 100%;
-    height: auto;
+    width: 100%;  /* Esto hace que la imagen ocupe todo el ancho disponible */
+    max-width: 1500px;  /* Define un ancho máximo para no exceder cierto límite */
+    height: auto;  /* Mantiene la proporción de la imagen sin distorsionarla */
     display: block;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;  /* Centra la imagen */
 }
+
 
 /* Sección de cursos y amigos */
 h2 {
